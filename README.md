@@ -22,6 +22,8 @@
   <a href="https://arxiv.org/abs/2607.19064"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-Mage--Flow-b31b1b" height="22" /></a>
   &nbsp;
   <a href="https://arxiv.org/abs/2607.24904"><img alt="arXiv Mage-VL" src="https://img.shields.io/badge/arXiv-Mage--VL-b31b1b" height="22" /></a>
+  &nbsp;
+  <a href="https://microsoft.github.io/Mage/cowork/"><img alt="Mage-VL-Cowork Project Page" src="https://img.shields.io/badge/%F0%9F%8C%90-Mage--VL--Cowork-blue" height="22" /></a>
 </p>
 
 
@@ -41,9 +43,10 @@ The family is organized around a shared **codec-aligned efficiency** philosophy 
 | Model | Task | Scale | Code | Report |
 | :--- | :--- | :---: | :--- | :--- |
 | **[Mage-VL](mage_vl/)** | Image & video understanding, proactive streaming | 4B | [`mage_vl/`](mage_vl/README.md) | [arXiv](https://arxiv.org/abs/2607.24904) |
+| **[Mage-VL-Cowork](mage_vl_cowork/)** | Hybrid computer use with GUI, code, and terminal actions | 4B | [`mage_vl_cowork/`](mage_vl_cowork/README.md) | [PDF](https://microsoft.github.io/Mage/cowork/assets/Mage-VL-Cowork.pdf) |
 | **[Mage-Flow](mage_flow/)** | Text-to-image generation & instruction-based editing | 4B | [`mage_flow/`](mage_flow/README.md) | [arXiv](https://arxiv.org/abs/2607.19064) |
 
-Both models are compact enough to train, fine-tune, and deploy on modest hardware, yet remain competitive with much larger open systems in their respective domains.
+These models are compact enough to train, fine-tune, and deploy on modest hardware, yet remain competitive with much larger open systems in their respective domains.
 
 ---
 
@@ -60,6 +63,19 @@ Both models are compact enough to train, fine-tune, and deploy on modest hardwar
 - **Seven empirical findings** on data efficiency, resolution scaling, codec acceleration, VideoQA-SFT redundancy, motion–spatial synergy, AI4AI data pipelines, and Zero-Vision SFT for multimodal RL.
 
 → Details, installation, inference, and proactive streaming: **[`mage_vl/README.md`](mage_vl/README.md)**
+
+## 🖥️ Mage-VL-Cowork — hybrid computer use from evolved harnesses
+
+**Mage-VL-Cowork** is a 4B hybrid computer-use agent that combines visual GUI interaction with code and terminal execution in one policy. It starts from an intermediate Mage-VL checkpoint and uses a five-stage curriculum across midtraining, SFT, and RL.
+
+**Highlights**
+
+- **66.0% on OSWorld-Verified** under a 50-step budget at 4B scale.
+- **Evolved teacher harnesses** provide GUI, terminal, and hybrid demonstrations for different training stages.
+- **Mage-CUA-Forge** synthesizes **293,806 tasks** across **6,915 skills** and retains **318,837 hybrid trajectories**.
+- **Online hybrid RL** adds **10.16 percentage points** over Hybrid SFT while reducing model calls by **13.0%** and output tokens by **25.4%**.
+
+→ Overview, training recipe, and results: **[`mage_vl_cowork/README.md`](mage_vl_cowork/README.md)**
 
 ## 🎨 Mage-Flow — efficient native-resolution generation & editing
 
@@ -105,6 +121,7 @@ Both models are compact enough to train, fine-tune, and deploy on modest hardwar
 Each model is self-contained in its own directory with a dedicated README:
 
 - **Mage-VL** — image/video understanding demo, codec backends, CLI → **[`mage_vl/README.md`](mage_vl/README.md)**
+- **Mage-VL-Cowork** — project overview, training recipe, and results → **[`mage_vl_cowork/README.md`](mage_vl_cowork/README.md)**
 - **Mage-Flow** — installation, Python API, CLI, prompt enhancement, Gradio app → **[`mage_flow/README.md`](mage_flow/README.md)**
 
 ## 📝 Citation
