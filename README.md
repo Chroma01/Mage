@@ -23,6 +23,8 @@
   &nbsp;
   <a href="https://arxiv.org/abs/2607.24904"><img alt="arXiv Mage-VL" src="https://img.shields.io/badge/arXiv-Mage--VL-b31b1b" height="22" /></a>
   &nbsp;
+  <a href="https://github.com/microsoft/Mage/blob/main/assets/mage_vl_cowork_tech_report.pdf"><img alt="Tech Report Mage-VL-Cowork" src="https://img.shields.io/badge/arXiv-Mage--VL--Cowork-b31b1b" height="22" /></a>
+  &nbsp;
   <a href="https://microsoft.github.io/Mage/cowork/"><img alt="Mage-VL-Cowork Project Page" src="https://img.shields.io/badge/%F0%9F%8C%90-Mage--VL--Cowork-blue" height="22" /></a>
 </p>
 
@@ -43,7 +45,7 @@ The family is organized around a shared **codec-aligned efficiency** philosophy 
 | Model | Task | Scale | Code | Report |
 | :--- | :--- | :---: | :--- | :--- |
 | **[Mage-VL](mage_vl/)** | Image & video understanding, proactive streaming | 4B | [`mage_vl/`](mage_vl/README.md) | [arXiv](https://arxiv.org/abs/2607.24904) |
-| **[Mage-VL-Cowork](mage_vl_cowork/)** | Hybrid computer use with GUI, code, and terminal actions | 4B | [`mage_vl_cowork/`](mage_vl_cowork/README.md) | [PDF](https://microsoft.github.io/Mage/cowork/assets/Mage-VL-Cowork.pdf) |
+| **[Mage-VL-Cowork](mage_vl_cowork/)** | Hybrid computer use with GUI, code, and terminal actions | 4B | [`mage_vl_cowork/`](mage_vl_cowork/README.md) | [PDF](https://github.com/microsoft/Mage/blob/main/assets/mage_vl_cowork_tech_report.pdf) |
 | **[Mage-Flow](mage_flow/)** | Text-to-image generation & instruction-based editing | 4B | [`mage_flow/`](mage_flow/README.md) | [arXiv](https://arxiv.org/abs/2607.19064) |
 
 These models are compact enough to train, fine-tune, and deploy on modest hardware, yet remain competitive with much larger open systems in their respective domains.
@@ -127,6 +129,13 @@ Each model is self-contained in its own directory with a dedicated README:
 ## 📝 Citation
 
 ```bibtex
+@article{zhang2026magecowork,
+  title={Mage-VL-Cowork: A Full Training Recipe to Learn Hybrid Computer Use from Evolved Harnesses},
+  author={Zhang, Xiaoyi and Wang, Haoqing and Zhang, Xinjie and Ming, Xiang and Wang, Xing and Yang, Senqiao and Zhang, Kaichen and Jia, Zhaoyang and Tan, Andong and Wang, Xinjiang and others},
+  journal={arXiv preprint},
+  year={2026}
+}
+
 @article{yang2026mage,
   title={Mage-VL: An Efficient Codec-Native Streaming Multimodal Foundation Model},
   author={Yang, Senqiao and Zhang, Kaichen and Jia, Zhaoyang and Guo, Jinghao and Shen, Yifei and Zhang, Xinjie and Zhang, Xiaoyi and Wang, Haoqing and Li, Xiao and Zhang, Peng and others},

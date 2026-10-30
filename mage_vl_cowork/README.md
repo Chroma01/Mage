@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://microsoft.github.io/Mage/cowork/"><img alt="Project Page" src="https://img.shields.io/badge/%F0%9F%8C%90-Project%20Page-blue" height="22" /></a>
-  <a href="https://microsoft.github.io/Mage/cowork/assets/Mage-VL-Cowork.pdf"><img alt="Technical Report" src="https://img.shields.io/badge/Technical%20Report-PDF-b31b1b" height="22" /></a>
+  <a href="https://github.com/microsoft/Mage/blob/main/assets/mage_vl_cowork_tech_report.pdf"><img alt="Technical Report" src="https://img.shields.io/badge/arXiv-Mage--VL--Cowork-b31b1b" height="22" /></a>
   <a href="https://github.com/microsoft/Mage"><img src="https://img.shields.io/badge/Code-GitHub-181717?logo=github" alt="GitHub" height="22"></a>
 </p>
 
@@ -47,4 +47,15 @@ The training data comes from **Mage-CUA-Forge**, which replaces per-task agent c
 | Hybrid SFT | 55.84 |
 | Hybrid RL | **66.0** |
 
-Mage-VL-Cowork-4B reports **87.5%** on OSWorld-Verified OS tasks and **62.7%** on multi-application workflow tasks. See the [project page](https://microsoft.github.io/Mage/cowork/) and [technical report](https://microsoft.github.io/Mage/cowork/assets/Mage-VL-Cowork.pdf) for evaluation settings, baselines, ablations, and RL infrastructure.
+Mage-VL-Cowork-4B reports **87.5%** on OSWorld-Verified OS tasks and **62.7%** on multi-application workflow tasks. See the [project page](https://microsoft.github.io/Mage/cowork/) and [technical report](https://github.com/microsoft/Mage/blob/main/assets/mage_vl_cowork_tech_report.pdf) for evaluation settings, baselines, ablations, and RL infrastructure.
+
+## 📝 Citation
+
+```bibtex
+@article{zhang2026magecowork,
+  title={Mage-VL-Cowork: A Full Training Recipe to Learn Hybrid Computer Use from Evolved Harnesses},
+  author={Zhang, Xiaoyi and Wang, Haoqing and Zhang, Xinjie and Ming, Xiang and Wang, Xing and Yang, Senqiao and Zhang, Kaichen and Jia, Zhaoyang and Tan, Andong and Wang, Xinjiang and others},
+  journal={arXiv preprint},
+  year={2026}
+}
+```
