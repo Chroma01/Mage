@@ -107,6 +107,12 @@ These models are compact enough to train, fine-tune, and deploy on modest hardwa
 | `Mage-VL` | image & video understanding **+** proactive streaming gate | [🤗 microsoft/Mage-VL](https://huggingface.co/microsoft/Mage-VL) |
 | `Mage-ViT` | codec-native visual encoder (ViT pre-training only) | [🤗 microsoft/Mage-ViT](https://huggingface.co/microsoft/Mage-ViT) |
 
+**Mage-VL-Cowork** — hybrid computer use. A 4B policy that combines GUI interaction with code and terminal execution.
+
+| Model | Task | Hugging Face |
+| :--- | :--- | :--- |
+| `Mage-VL-Cowork` | hybrid computer use (GUI + code & terminal) | [🤗 microsoft/Mage-VL-Cowork](https://huggingface.co/microsoft/Mage-VL-Cowork) |
+
 **Mage-Flow** — generation & editing. Each checkpoint is a self-contained diffusers-style repo (`transformer/` + shared `vae/`, `text_encoder/`, `scheduler/`).
 
 | Model | Task | Variant | Steps | Hugging Face |
